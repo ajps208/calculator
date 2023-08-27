@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1 style="text-align: center;">Calculator</h1>
+    <div class="calc-body">
+        
+
+        <!-- Calculator Display Screen -->
+        <div class="calc-screen">
+            <div id="calc-typed">
+                <input type="text" placeholder="0" id="result" class="form-control" readonly>
+            </div>
+        </div>
+        
+        <!-- Calculator Buttons -->
+        <div class="calc-button-row">
+            <button id="ac"  onclick="resetResult()">AC</button>
+            <button id="" class="opt"></button>
+            <button id="percentage" onclick="display('%')" class="opt">&#37;</button>
+            <button id="division" onclick="display('/')" class="opt">&#247;</button>
+            <button id="seven"  onclick="display(7)">7</button>
+            <button id="eight" onclick="display(8)">8</button>
+            <button id="nine" onclick="display(9)">9</button>
+            <button id="mul" onclick="display('*')" class="opt">&#215;</button>
+            <button id="four" onclick="display(4)">4</button>
+            <button id="five" onclick="display(5)">5</button>
+            <button id="six" onclick="display(6)">6</button>
+            <button id="sub" onclick="display('-')" class="opt">&#8722;</button>
+            <button id="one" onclick="display(1)">1</button>
+            <button id="two" onclick="display(2)">2</button>
+            <button id="three" onclick="display(3)">3</button>
+            <button id="add" onclick="display('+')" class="opt">&#43;</button>
+            <button id="zero" onclick="display(0)">0</button>
+            <button id="dot" onclick="display('.')">.</button>
+            <button id="clear" onclick="removeLast()">&#9003;</button>
+            <button id="equal" onclick="exprEval()" class="opt">&#61;</button>
+        </div>
+        </div>
+    
+</body>
+<script src="./main.js"></script>
+</html>
